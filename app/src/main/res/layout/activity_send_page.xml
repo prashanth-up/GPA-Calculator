@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendPage">
+
+    <EditText
+        android:id="@+id/inputNumber"
+        android:layout_width="249dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="132dp"
+        android:ems="10"
+        android:hint="Enter The Phone Number"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/sharebut"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sharebut"
+        android:layout_width="173dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginBottom="224dp"
+        android:text="Send the Result "
+        android:textColor="#303F9F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="310dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="49dp"
+        android:text="Welcome to the Share Page"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#0288D1"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputGPA"
+        android:layout_width="249sp"
+        android:layout_height="51sp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Enter The CGPA"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputNumber" />
+</androidx.constraintlayout.widget.ConstraintLayout>
